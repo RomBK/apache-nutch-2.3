@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+<configuration>
+  <property>
+    <name>plugin.folders</name>
+    <value>plugins</value>
+  </property>
+  <property>
+    <name>http.agent.name</name>
+    <value>my name</value>
+  </property>
+  <property>
+    <name>http.robots.agents</name>
+    <value>my name</value>
+  </property>
+  <property>
+    <name>storage.data.store.class</name>
+    <value>org.apache.gora.hbase.store.HBaseStore</value>
+  </property>
+  <property>
+    <name>plugin.includes</name>
+    <value>protocol-http|protocol-httpclient|urlfilter-regex|parse-(html|tika|metatags)|index-(basic|anchor)|query-(basic|site|url)|summary-basic|scoring-opic|urlnormalizer-(pass|regex|basic)|indexer-elastic|index-(metadata|more|basic|anchor|metadata)</value>
+  </property>
+  <property>
+    <name>db.ignore.external.links</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>elastic.host</name>
+    <value>localhost</value>
+  </property>
+  <property>
+    <name>elastic.index</name>
+    <value>webpage</value>
+  </property>
+  <property>
+    <name>http.accept.language</name>
+    <value>en-us,en-gb,en;q=0.7,*;q=0.3,vi,vi-VN</value>
+  </property>
+  <property>
+    <name>http.redirect.max</name>
+    <value>2</value>
+  </property>
+  <property>
+    <name>db.max.outlinks.per.page</name>
+    <value>-1</value>
+  </property>
+  <property>
+    <name>parser.skip.truncated</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>storage.crawl.id</name>
+    <value></value>
+  </property>
+</configuration>
