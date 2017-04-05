@@ -21,7 +21,9 @@
   </property>
   <property>
     <name>plugin.includes</name>
-    <value>protocol-http|protocol-httpclient|urlfilter-regex|parse-(html|tika|metatags)|index-(basic|anchor)|query-(basic|site|url)|summary-basic|scoring-opic|urlnormalizer-(pass|regex|basic)|indexer-elastic|index-(metadata|more|basic|anchor|metadata)</value>
+    <value>
+      protocol-http|protocol-httpclient|urlfilter-regex|parse-(html|tika|metatags|selector)|index-(basic|anchor)|query-(basic|site|url)|summary-basic|scoring-opic|urlnormalizer-(pass|regex|basic)|indexer-elastic|index-(metadata|more|basic|anchor|metadata)
+    </value>
   </property>
   <property>
     <name>db.ignore.external.links</name>

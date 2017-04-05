@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+
+<parse-selector>
+
+  <!-- http://vnexpress.net/ -->
+  <parse domain="vnexpress.net">
+    <type>text</type>
+    <label>author</label>
+    <selector>p[style=text-align:right;]</selector>
+  </parse>
+
+
+  <!-- manga24h.me -->
+  <parse domain="manga24h.me">
+    <type>text</type>
+    <label>title_story</label>
+    <selector>#manga-detail-info > h1|#section-manga > div:nth-child(1) > ul > li:nth-child(2) > a
+    </selector>
+  </parse>
+  <parse domain="manga24h.me">
+    <type>img</type>
+    <label>img_storys</label>
+    <selector>chapcontent</selector>
+  </parse>
+  <parse domain="manga24h.me">
+    <type>img</type>
+    <label>avatar_story</label>
+    <selector>.col-md-3.detail-info-image</selector>
+  </parse>
+  <parse domain="manga24h.me">
+    <type>text</type>
+    <label>type_story</label>
+    <selector>#detail-info-category</selector>
+  </parse>
+  <parse domain="manga24h.me">
+    <type>text</type>
+    <label>author_story</label>
+    <selector>#detail-info-author</selector>
+  </parse>
+  <parse domain="manga24h.me">
+    <type>text</type>
+    <label>status_story</label>
+    <selector>#manga-detail-tab-info > table > tbody > tr:nth-child(3) > td.detail-info-content
+    </selector>
+  </parse>
+  <parse domain="manga24h.me">
+    <type>text</type>
+    <label>status_story</label>
+    <selector>#manga-detail-tab-info > table > tbody > tr:nth-child(6) > td.detail-info-content
+    </selector>
+  </parse>
+  <parse domain="manga24h.me">
+    <type>text</type>
+    <label>desc_story</label>
+    <selector>#manga-detail-info > div:nth-child(6)</selector>
+  </parse>
+  <!-- deffaul_content = true nutch parse content deffaul-->
+  <parse domain="manga24h.me" deffaul_content="true">
+    <type>text</type>
+    <label>content</label>
+    <selector>content_1|content_2</selector>
+  </parse>
+
+  <!-- mangak.info -->
+  <parse domain="mangak.info">
+    <type>text</type>
+    <label>title_story</label>
+    <selector>#main_body > div.cotgiua > div > div.hentry.truyen_info > div.entry-header >
+      div.truyen_if_wrap > ul > li:nth-child(1) > h1
+    </selector>
+  </parse>
+  <parse domain="mangak.info">
+    <type>img</type>
+    <label>img_storys</label>
+    <selector>.vung_doc</selector>
+  </parse>
+  <parse domain="mangak.info">
+    <type>img</type>
+    <label>avatar_story</label>
+    <selector>.truyen_info_left</selector>
+  </parse>
+  <parse domain="mangak.info">
+    <type>text</type>
+    <label>type_story</label>
+    <selector>#main_body > div.cotgiua > div > div.hentry.truyen_info > div.entry-header >
+      div.truyen_if_wrap > ul > li:nth-child(3)
+    </selector>
+  </parse>
+  <parse domain="mangak.info">
+    <type>text</type>
+    <label>author_story</label>
+    <selector>#main_body > div.cotgiua > div > div.hentry.truyen_info > div.entry-header >
+      div.truyen_if_wrap > ul > li:nth-child(2)
+    </selector>
+  </parse>
+  <parse domain="mangak.info">
+    <type>text</type>
+    <label>status_story</label>
+    <selector>#main_body > div.cotgiua > div > div.hentry.truyen_info > div.entry-header >
+      div.truyen_if_wrap > ul > li:nth-child(4) > a
+    </selector>
+  </parse>
+  <parse domain="mangak.info">
+    <type>text</type>
+    <label>date_post</label>
+    <selector>#main_body > div.cotgiua > div > div.hentry.truyen_info > div.entry-header >
+      div.truyen_if_wrap > ul > li:nth-child(6)
+    </selector>
+  </parse>
+  <parse domain="mangak.info">
+    <type>text</type>
+    <label>desc_story</label>
+    <selector>#main_body > div.cotgiua > div > div.hentry.truyen_info > div.entry-header >
+      div.truyen_description > div.entry-content
+    </selector>
+  </parse>
+  <!-- deffaul_content = true nutch parse content deffaul-->
+  <parse domain="mangak.info" deffaul_content="true">
+    <type>text</type>
+    <label>content</label>
+    <selector>content_1|content_2</selector>
+  </parse>
+
+
+  <!-- hamtruyen.vn -->
+  <parse domain="hamtruyen.vn">
+    <type>text</type>
+    <label>title_story</label>
+    <selector>#content_truyen > div.col-xs-8.wrapper_info > h1</selector>
+  </parse>
+  <parse domain="hamtruyen.vn">
+    <type>img</type>
+    <label>img_storys</label>
+    <selector>#content_chap</selector>
+  </parse>
+  <parse domain="hamtruyen.vn">
+    <type>img</type>
+    <label>avatar_story</label>
+    <selector>#content_truyen > div.col-xs-4.wrapper_image</selector>
+  </parse>
+  <parse domain="hamtruyen.vn">
+    <type>text</type>
+    <label>type_story</label>
+    <selector>#content_truyen > div.col-xs-8.wrapper_info > p.row_theloai</selector>
+  </parse>
+  <parse domain="hamtruyen.vn">
+    <type>text</type>
+    <label>author_story</label>
+    <selector>#content_truyen > div.col-xs-8.wrapper_info > p:nth-child(2)</selector>
+  </parse>
+  <parse domain="hamtruyen.vn">
+    <type>text</type>
+    <label>status_story</label>
+    <selector>#content_truyen > div.col-xs-8.wrapper_info > p:nth-child(4)</selector>
+  </parse>
+  <parse domain="hamtruyen.vn">
+    <type>text</type>
+    <label>date_post</label>
+    <selector>#main_body > div.cotgiua > div > div.hentry.truyen_info > div.entry-header >
+      div.truyen_if_wrap > ul > li:nth-child(6)
+    </selector>
+  </parse>
+  <parse domain="hamtruyen.vn">
+    <type>text</type>
+    <label>desc_story</label>
+    <selector>#content_truyen > div.col-xs-8.wrapper_info > div.no_padding.gachdotter</selector>
+  </parse>
+  <!-- deffaul_content = true nutch parse content deffaul-->
+  <parse domain="hamtruyen.vn" default_content="true">
+    <type>text</type>
+    <label>content</label>
+    <selector>content_1|content_2</selector>
+  </parse>
+
+
+</parse-selector>

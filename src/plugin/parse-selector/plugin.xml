@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+  id="parse-selector"
+  name="Plugin parse-selector"
+  version="0.0.1"
+  provider-name="nutch.org">
+  <runtime>
+    <library name="parse-selector.jar">
+      <export name="*"/>
+    </library>
+  </runtime>
+  <requires>
+    <import plugin="nutch-extensionpoints"/>
+  </requires>
+  <extension id="org.apache.nutch.parse.selector"
+    name="Plugin parse-selector"
+    point="org.apache.nutch.parse.ParseFilter">
+    <implementation id="ParseSelector" class="org.apache.nutch.parse.selector.ParseSelector"/>
+  </extension>
+  <!--<extension id="org.apache.nutch.parsearticle.IndexArticle"
+             name="Plugin parse-article index"
+             point="org.apache.nutch.indexer.IndexingFilter">
+      <implementation id="IndexArticle"
+                      class="org.apache.nutch.parsearticle.IndexArticle"/>
+  </extension>-->
+</plugin>
