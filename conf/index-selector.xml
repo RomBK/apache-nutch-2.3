@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<index-selector>
+
+  <!-- http://vnexpress.net/ -->
+  <index domain="vnexpress.net">
+    <type>author</type>
+    <label>author</label>
+  </index>
+</index-selector>

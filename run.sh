@@ -3,7 +3,7 @@ echo "Run nutch crawler ...."
 while true
 do
   echo "[Inject]"
-  ./runtime/local/bin/nutch inject file:///home/rombk/Project/Crawler/urls
+  ./runtime/local/bin/nutch inject file:///home/rombk/Desktop/urls
   echo "[Generte]"
   ./runtime/local/bin/nutch generate -topN 10
   echo "[Fetch]"

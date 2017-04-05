@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+  id="index-selector"
+  name="Selector Indexing Filter"
+  version="1.0.0"
+  provider-name="nutch.org">
+
+  <runtime>
+    <library name="index-selector.jar">
+      <export name="*"/>
+    </library>
+  </runtime>
+
+  <requires>
+    <import plugin="nutch-extensionpoints"/>
+  </requires>
+
+
+  <extension id="org.apache.nutch.indexer.selector"
+    name="Nutch Selector Indexing Filter"
+    point="org.apache.nutch.indexer.IndexingFilter">
+    <implementation id="IndexSelector"
+      class="org.apache.nutch.indexer.selector.IndexSelector"/>
+  </extension>
+
+</plugin>

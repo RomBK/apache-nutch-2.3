@@ -171,6 +171,7 @@
       <arg value="${javadoc.proxy.port}"/>
 
       <packageset dir="${src.dir}"/>
+      <packageset dir="${plugins.dir}/index-selector/src/java"/>
       <packageset dir="${plugins.dir}/parse-selector/src/java"/>
       <packageset dir="${plugins.dir}/creativecommons/src/java"/>
       <!--packageset dir="${plugins.dir}/feed/src/java"/-->
